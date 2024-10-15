@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e3b4e;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+    background-color: #1e2b3d;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+main h1 {
+    font-size: 2.5em;
+    color: #2e3b4e;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #2e3b4e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+main p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.sports-img{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn-img img{
+    height: 200px;
+    width: 359px;
+    float: right;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+label{
+    margin-top: 10px;
+    font-weight: bold;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* .sports-list {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.sports-list li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.sports-list li:last-child {
+    border-bottom: none;
+} */
+
+/* Footer */
+footer {
+    background-color: #2e3b4e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .logo img {
+        width: 120px;
+        margin-left: 0;
+    }
+
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    .sports-list {
+        padding: 10px;
+    }
+
+    .sports-list li {
+        font-size: 1em;
+    }
+}
